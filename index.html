@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Masa Corporal</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <H1>Calculadora de Índice de Masa Corporal </H1>
+
+    <div></div>
+    <div class="entradas">
+        <input type="number" id="peso" placeholder="Ingrese su peso en Kg">
+
+
+        <input type="number" class="alturaCm" placeholder="Ingrese su altura en Cm">
+    </div>
+
+    <button type="button" onclick="obtenerValores()">
+        Calcular
+    </button>
+
+    <div id="contenedor">
+        <table class="parametros">
+            <tr>
+                <th>Inferior al normal</th>
+                <td>--</td>
+                <td>Menos de 18.5</td>
+            </tr>
+            <tr>
+                <th>Normal</th>
+                <td>18.5</td>
+                <td>24.9</td>
+            </tr>
+            <tr>
+                <th>Superior al normal</th>
+                <td>25</td>
+                <td>29.9</td>
+            </tr>
+            <tr>
+                <th>Obesidad</th>
+                <td>30</td>
+                <td>--</td>
+            </tr>
+
+
+        </table>
+        <p id="devolucion"></p>
+    </div>
+
+
+
+    <div>
+        <!-- <p id="entradas"></p> -->
+        <p id="indiceMasa"></p>
+        <!-- <p id="devolucion"></p> -->
+    </div>
+
+
+
+</body>
+
+</html>

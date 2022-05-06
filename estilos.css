@@ -1,0 +1,159 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("nutricion.jpg");
+  background-repeat: no-repeat;
+  background-color: rgb(236, 231, 226);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: brown;
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+  font-size: 2.2rem;
+}
+
+.entradas {
+  margin-left: 0.8rem;
+  /* margin-top: 4rem; */
+}
+
+#peso {
+  margin: 3rem;
+  padding: 0.65rem;
+  border-radius: 0.31rem;
+  font-size: 1.3rem;
+}
+
+.alturaCm {
+  padding: 0.65rem;
+  border-radius: 0.31rem;
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: blueviolet;
+  border-radius: 0.31rem;
+  font-size: 1.25rem;
+  padding: 0.7rem;
+  margin-left: 19.7rem;
+  border: 0.125rem solid rgb(54, 9, 97);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: rgb(50, 13, 85);
+  color: white;
+  transition: 0.2s;
+}
+
+#contenedor {
+  display: flex;
+  column-gap: 8rem;
+  padding-right: 4rem;
+}
+
+table {
+  width: 35%;
+  margin-left: 8rem;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: rgb(50, 13, 85);
+  font-weight: bold;
+  /* background-color: rgb(238, 186, 181); */
+  border-collapse: collapse;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+th,
+td {
+  width: 30%;
+  text-align: left;
+}
+
+table,
+th,
+td {
+  border: 4px groove rgb(138, 100, 153);
+}
+
+th {
+  background-color: salmon;
+}
+td {
+  background-color: rgb(200, 160, 156);
+}
+
+#devolucion {
+  justify-content: right;
+  flex-shrink: 5;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: rgb(46, 3, 46);
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 0.31rem;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+
+  /* border: rgba(0, 0, 0, 0.2) 1px groove; */
+}
+
+#indiceMasa {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(110, 20, 133);
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 47rem) {
+  h1 {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  #peso {
+    display: flexbox;
+    width: 70%;
+    margin-right: 3rem;
+  }
+
+  .alturaCm {
+    display: flexbox;
+    margin-left: 3rem;
+    width: 70%;
+    margin-right: 3rem;
+  }
+
+  button {
+    margin-left: 3.8rem;
+    margin-top: 2rem;
+    display: flexbox;
+    float: inline-start;
+  }
+
+  #contenedor {
+    display: block;
+  }
+
+  table {
+    margin-top: 2rem;
+    display: block;
+    width: 80%;
+    /* float: inline-start; */
+    margin-left: 4rem;
+  }
+
+  #devolucion {
+    background-color: transparent;
+    margin: 2rem;
+    margin-left: 3rem;
+    width: 90%;
+  }
+}
